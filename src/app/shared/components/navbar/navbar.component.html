@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<p>
+  <mat-toolbar>
+    <span [routerLink]="['/']" class="app-brand">
+      <span class="typ">Typ</span>
+      <span class="fast">Fast</span>
+    </span>
+
+    <span class="spacer"></span>
+
+    <span [routerLink]="['/getting-started']" routerLinkActive="active" class="nav-link">Home</span>
+    <span [routerLink]="['/game']" routerLinkActive="active" class="nav-link">Game</span>
+    <span [routerLink]="['/about']" routerLinkActive="active" class="nav-link">About</span>
+
+    <span class="spacer"></span>
+
+    <button mat-button [matMenuTriggerFor]="userMenu" class="nav-link">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item [routerLink]="['/auth/login']">Login</button>
+      <button mat-menu-item [routerLink]="['/auth/profile']">Profile</button>
+      <button mat-menu-item [routerLink]="['/auth/logout']">Logout</button>
+    </mat-menu>
+
+  </mat-toolbar>
+</p>
