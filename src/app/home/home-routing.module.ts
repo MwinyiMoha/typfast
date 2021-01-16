@@ -1,8 +1,20 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { LandingComponent } from './landing/landing.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    children: [
+      { path: '', component: LandingComponent },
+      { path: 'about', component: AboutComponent }
+    ]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
