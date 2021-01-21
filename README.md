@@ -1,6 +1,6 @@
 # Typfast
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/4a64b5b76b0b5b8b75e0/maintainability)](https://codeclimate.com/github/MwinyiMoha/typfast/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4a64b5b76b0b5b8b75e0/test_coverage)](https://codeclimate.com/github/MwinyiMoha/typfast/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/4a64b5b76b0b5b8b75e0/maintainability)](https://codeclimate.com/github/MwinyiMoha/typfast/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4a64b5b76b0b5b8b75e0/test_coverage)](https://codeclimate.com/github/MwinyiMoha/typfast/test_coverage) ![CI Test](https://github.com/MwinyiMoha/typfast/workflows/CI%20Test/badge.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
