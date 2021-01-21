@@ -10,8 +10,9 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      { path: '', component: LandingComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'getting-started', component: LandingComponent },
+      { path: 'about', component: AboutComponent },
+      { path: '', redirectTo: 'getting-started', pathMatch: 'full'}
     ]
   }
 ];
